@@ -1,13 +1,8 @@
-// import Layout from "./components/Layout/Layout";
-import AllFood from "./pages/AllFood"
-import Contact from "./pages/Contact";
+import Layout from './components/Layout/Layout'
 
 function App() {
   return (
-    <>
-      <AllFood />
-      <Contact />
-    </> 
+      <Layout />
   )
 }
 

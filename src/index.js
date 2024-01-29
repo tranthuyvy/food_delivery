@@ -6,18 +6,17 @@ import "bootstrap/dist/css/bootstrap.css";
 import "remixicon/fonts/remixicon.css";
 import "./index.css";
 
-import { Provider } from "react-redux"
+import { Provider } from 'react-redux'
 
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Router>
-      <Provider>
+    <Router>
+      {/* <Provider> */}
         <App />
-      </Provider>
-    </Router> */}
+      {/* </Provider> */}
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 )

@@ -1,0 +1,113 @@
+.footer {
+  padding: 50px 0px;
+  background: #fde4e4;
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+
+  .footer__logo {
+    img {
+      width: calc(100% - 70%);
+      margin-bottom: 1.5rem;
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #412323;
+      line-height: 29px;
+    }
+  }
+
+  .footer__title {
+    font-size: 1.1rem;
+    color: #212245;
+    font-weight: 600;
+  }
+
+  .delivery__time-list {
+    background: transparent;
+
+    .delivery__time-item {
+      display: flex;
+      margin: 0;
+      gap: 0.7rem;
+      background: transparent !important;
+
+      span {
+        font-weight: 600;
+        color: #212245;
+        margin: 0;
+      }
+
+      p {
+        color: #212245;
+      }
+    }
+  }
+
+  .newsletter {
+    padding: 7px 10px;
+    border: 1px solid #212245;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #212245;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #212245;
+      }
+    }
+
+    span {
+      background: #df2020;
+      color: #fff;
+      padding: 5px 20px;
+      border-radius: 5px;
+    }
+
+    i {
+      color: #fff;
+    }
+  }
+
+  .copyright__text {
+    font-size: 0.8rem;
+    color: #df2020;
+    font-weight: 600;
+  }
+
+  .social__links {
+    span {
+      padding: 5px;
+      background-color: #df2020;
+      color: #fff;
+      border-radius: 50%;
+    }
+
+    i {
+      padding: 5px;
+      background-color: #df2020;
+      color: #fff;
+      border-radius: 50%;
+    }
+  }
+}

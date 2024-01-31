@@ -11,6 +11,7 @@ import products from '../assets/fake-data/products'
 import foodCategoryImg01 from '../assets/images/hamburger.png'
 import foodCategoryImg02 from '../assets/images/pizza.png'
 import foodCategoryImg03 from '../assets/images/bread.png'
+import ProductCard from '../components/UI/product-card/ProductCard'
 import '../styles/home.scss'
 
 const featureData = [
@@ -110,7 +111,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section>
+      <section className='section__food__category'>
         <Container>
           <Row>
             <Col lg='12' className='text-center'>
@@ -118,13 +119,39 @@ const Home = () => {
             </Col>
 
             <Col lg='12'>
-              <div className="food__category">
-                <button className='all__btn'>All</button>
-                <button><img src={foodCategoryImg01} alt="" />Burger</button>
-                <button><img src={foodCategoryImg02} alt="" />Pizza</button>
-                <button><img src={foodCategoryImg03} alt="" />Bread</button>
+              <div className="food__category d-flex align-items-center justify-content-center gap-4">
+                <button className='all__btn foodBtnActive'>All</button>
+                <button className='d-flex align-items-center gap-2'>
+                  <img
+                    src={foodCategoryImg01}
+                    alt=""
+                  />
+                  Burger
+                </button>
+
+                <button className='d-flex align-items-center gap-2'>
+                  <img
+                    src={foodCategoryImg02}
+                    alt=""
+                  />
+                  Pizza
+                </button>
+
+                <button className='d-flex align-items-center gap-2'>
+                  <img
+                    src={foodCategoryImg03}
+                    alt=""
+                  />
+                  Bread
+                </button>
               </div>
             </Col>
+
+            {products.map((item) => (
+              <Col lg='3' md='4' key={item.id} className='mt-5'>
+                <ProductCard item={item} />
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>

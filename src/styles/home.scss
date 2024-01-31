@@ -92,3 +92,33 @@
     }
   }
 }
+
+.section__food__category {
+  .food__category {
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+    border-radius: 8px;
+
+    button {
+      border: none;
+      outline: none;
+      padding: 7px 20px;
+      background: transparent;
+      color: #fff;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .foodBtnActive {
+      background: #fff !important;
+      border-radius: 5px;
+      color: #df2020;
+
+    }
+  }
+}

@@ -3,7 +3,29 @@ import Helmet from '../components/Helmet/Helmet'
 import { Container, Row, Col } from 'reactstrap'
 import heroImg from '../assets/images/hero.png'
 import { Link } from 'react-router-dom'
-import '../styles/hero-section.scss'
+import Category from '../components/UI/category/Category'
+import featureImg01 from '../assets/images/service-01.png'
+import featureImg02 from '../assets/images/service-02.png'
+import featureImg03 from '../assets/images/service-03.png'
+import '../styles/home.scss'
+
+const featureData = [
+  {
+    title: 'Quick Delivery',
+    imgUrl: featureImg01,
+    desc: 'Nhanh chóng nhận hàng'
+  },
+  {
+    title: 'Super Dine In',
+    imgUrl: featureImg02,
+    desc: 'Thức uống ngon lành'
+  },
+  {
+    title: 'Easy Pick Up',
+    imgUrl: featureImg03,
+    desc: 'Dễ dàng đặt hàng'
+  }
+]
 
 const Home = () => {
   return (
@@ -19,9 +41,9 @@ const Home = () => {
                 </h1>
                 <p>Day la mot doan cuc ky cuc ky very very dai thong</p>
 
-                <div className="hero__btns d-flex align-items-center gap-5 mt-4">
+                <div className='hero__btns d-flex align-items-center gap-5 mt-4'>
                   <button className='order__btn d-flex align-items-center justify-content-between '>
-                    Order Now <i class="ri-arrow-right-circle-fill"></i>
+                    Order Now <i class='ri-arrow-right-circle-fill'></i>
                   </button>
 
                   <button className='all__foods-btn'><Link to='/foods'>See all foods</Link></button>
@@ -50,6 +72,35 @@ const Home = () => {
                 <img src={heroImg} alt='hero-img' className='w-100' />
               </div>
             </Col>
+
+          </Row>
+        </Container>
+      </section>
+
+      <section className='pt-0'>
+        <Category />
+      </section>
+
+      <section className='section__feature'>
+        <Container>
+          <Row>
+            <Col lg='12' className='text-center'>
+              <h5 className='feature__subtitle mb-4'>What we serve</h5>
+              <h2 className='feature__title'>Just sit back at home</h2>
+              <h2 className='feature__title'>we will <span>take care</span></h2>
+              <p className='mb-1 mt-4 feature__text'>Huong Thom Tu Dat Viet</p>
+              <p className='feature__text'>Website build using ReactJS</p>
+            </Col>
+
+            {featureData.map((item, index) => (
+              <Col lg='4' md='4' key={index} className='mt-5'>
+                <div className='feature__item text-center px-5 py-3'>
+                  <img src={item.imgUrl} alt='feature-img' className='w-25 mb-3' />
+                  <h5 className='fw-bold mb-3'>{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </Col>
+            ))}
 
           </Row>
         </Container>

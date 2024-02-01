@@ -95,7 +95,7 @@
 
 .section__food__category {
   .food__category {
-    background: #df2020;
+    background: #fff;
     text-align: center;
     margin-top: 30px;
     padding: 20px 0px;
@@ -106,7 +106,8 @@
       outline: none;
       padding: 7px 20px;
       background: transparent;
-      color: #fff;
+      color: #212245;
+      font-weight: 600;
 
       img {
         width: 20px;
@@ -115,10 +116,11 @@
     }
 
     .foodBtnActive {
-      background: #fff !important;
+      background: #fa5f5f !important;
       border-radius: 5px;
-      color: #df2020;
-
+      color: #fff;
+      font-weight: 600;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
   }
 }

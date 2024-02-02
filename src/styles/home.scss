@@ -124,3 +124,33 @@
     }
   }
 }
+
+.section__why__choose {
+  .why__TV__food {
+
+    .TV__food__title {
+      span {
+        color: #df2020;
+      }
+    }
+
+    .TV__food__desc {
+      color: #777;
+      line-height: 28px;
+    }
+
+    .list__choose {
+      .choose__title {
+        font-weight: 600;
+        margin-bottom: 10px;
+        i {
+          font-weight: 500 !important;
+          color: #df2020;
+        }
+      }
+      .choose__desc {
+        color: #777;
+      }
+    }
+  }
+}

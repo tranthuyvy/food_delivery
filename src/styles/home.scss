@@ -51,7 +51,6 @@
   }
 
   .hero__service {
-
     p {
       color: #212245;
       font-weight: 600;
@@ -73,7 +72,6 @@
 .section__feature {
   .feature__subtitle {
     color: #df2020;
-
   }
 
   .feature__title {
@@ -127,7 +125,6 @@
 
 .section__why__choose {
   .why__TV__food {
-
     .TV__food__title {
       span {
         color: #df2020;
@@ -151,6 +148,23 @@
       .choose__desc {
         color: #777;
       }
+    }
+  }
+}
+
+.section__testimonial {
+  .testimonial {
+    .testimonial__subtitle {
+      color: #df2020;
+    }
+    .testimonial__title {
+      span {
+        color: #df2020;
+      }
+    }
+    .testimonial__desc {
+      color: #777;
+      line-height: 30px;
     }
   }
 }

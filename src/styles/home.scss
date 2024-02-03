@@ -168,3 +168,123 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .section__hero {
+    .hero__content {
+      text-align: center;
+      h5 {
+        font-size: 1rem;
+        p {
+          font-size: 0.8rem;
+          line-height: 25px;
+        }
+      }
+      .hero__title {
+        font-size: 1.5rem;
+        line-height: 40px;
+      }
+      .hero__btns {
+        justify-content: center;
+
+        button {
+          padding: 5px 15px;
+          font-size: 0.7rem;
+        }
+      }
+      .hero__service {
+        p {
+          font-size: 0.7rem !important;
+        }
+      }
+    }
+  }
+
+  .section__feature {
+    .feature__item {
+      h5 {
+        font-size: 0.9rem;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+      }
+    }
+    .feature__subtitle {
+      font-size: 1rem;
+    }
+    .feature__text {
+      font-size: 0.8rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .section__food__category {
+    .food__category {
+      padding: 15px;
+      button {
+        padding: 5px 15px;
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .section__why__choose {
+    .why__TV__food {
+      .TV__food__desc {
+        font-size: 0.8rem;
+      }
+      .list__choose {
+        .choose__title {
+          font-size: 0.8rem;
+        }
+        .choose__desc {
+          margin-bottom: 0;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .section__testimonial {
+    .testimonial {
+      .testimonial__subtitle {
+        font-size: 1rem;
+      }
+      .testimonial__desc {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section__hero {
+    .hero__content {
+      text-align: center;
+      h5 {
+        font-size: 1rem;
+        p {
+          font-size: 0.8rem;
+          line-height: 25px;
+        }
+      }
+      .hero__title {
+        font-size: 1.5rem;
+        line-height: 40px;
+      }
+      .hero__btns {
+        justify-content: center;
+  
+        //   button {
+        //     padding: 5px 15px;
+        //     font-size: 0.7rem;
+        //   }
+      }
+      .hero__service {
+        justify-content: center;
+      }
+    }
+  }
+  .section__why__choose {
+    padding-top: 0;
+  }
+}

@@ -111,3 +111,54 @@
     }
   }
 }
+
+@media only screen and (max-width:1024px) {
+  .newsletter {
+    input {
+      padding: 10 px 7px;
+      font-size: 0.7rem;
+    }
+    span {
+      padding: 4px 20px;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media only screen and (max-width:768px){
+  .footer {
+    .footer__title {
+      font-size: 0.8rem;
+    }
+    .delivery__time-list {
+      .delivery__time-item {
+        span {
+          font-size: 0.8rem;
+        }
+        p {
+          font-size: 0.7rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:576px){
+  .copyright__text {
+    text-align: center;
+  }
+  .social__links {
+    justify-content: center;
+    p {
+      font-size: 0.8rem;
+    }
+    span {
+      padding: 4px;
+      font-size: 0.7rem;
+    }
+    a {
+      font-size: 0.7rem;
+    }
+  }
+}

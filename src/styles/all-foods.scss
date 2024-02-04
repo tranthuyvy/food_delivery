@@ -21,4 +21,35 @@
       border-radius: 5px;
     }
   }
+
+  .paginationBtns {
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    list-style: none;
+    margin-top: 30px;
+
+    a {
+      padding: 6px 9px;
+      background: #fff;
+      box-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+      color: #df2020 !important;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin: 5px;
+
+      &:hover {
+        background: #212245;
+        color: #fff !important;
+
+      }
+    }
+  }
 }

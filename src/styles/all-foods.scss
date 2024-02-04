@@ -53,3 +53,24 @@
     }
   }
 }
+
+@media only screen and (max-width:768px) {
+  .section__allFood {
+    .search__widget {
+      width: 100%;
+      margin-bottom: 20px;
+
+      input {
+        width: 100%;
+        font-size: 0.8rem;
+      }
+    }
+
+    .sorting__widget {
+      select {
+        width: 100% !important;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

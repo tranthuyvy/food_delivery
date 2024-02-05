@@ -36,6 +36,8 @@ const FoodDetail = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+
+    console.log(enteredName, enteredEmail, reviewMsg)
   }
 
   useEffect(() => {

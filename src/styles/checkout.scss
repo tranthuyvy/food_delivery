@@ -1,0 +1,57 @@
+.checkout__bill {
+  background: #fde4e4;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+
+  .checkout__total {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    span {
+      color: #df2020;
+    }
+  }
+}
+
+.checkout__form {
+  .form__group {
+    margin-bottom: 30px;
+    input {
+      width: 100%;
+      background: transparent;
+      padding: 7px 20px;
+      border: none;
+      border-bottom: 1px solid #2122454c;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .payment__btn {
+    border: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    color: #212245;
+    font-weight: 600;
+
+    &:hover {
+      background: #fde4e4;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .checkout__bill {
+    margin-top: 40px;
+
+    h6 {
+      font-size: 0.9rem;
+    }
+  }
+}
